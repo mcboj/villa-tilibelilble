@@ -13,7 +13,6 @@ Le site est hébergé gratuitement par GitHub Pages : chaque modification enregi
 | --- | --- |
 | `index.html` | La page du site : textes, mise en page et informations lues par Google |
 | `images/` | Les photos, chacune en deux tailles (800 et 1600 pixels) |
-| `CNAME` | Indique à GitHub l'adresse du site (`www.villa-tilibelilble.fr`) |
 | `robots.txt` | Autorise Google, Bing et les assistants IA à lire le site |
 | `sitemap.xml` | Le plan du site, déclaré à Google et à Bing |
 | `llms.txt` | Un résumé factuel de la villa pour les assistants IA (ChatGPT, Claude...) |
@@ -42,18 +41,20 @@ L'onglet **History** de chaque fichier garde toutes les versions. Ouvrez la vers
 
 ## Réglages GitHub Pages et nom de domaine
 
-- **Settings → Pages** : source « Deploy from a branch », branche `main`, dossier `/ (root)`. Champ « Custom domain » : `www.villa-tilibelilble.fr`, case « Enforce HTTPS » cochée.
+- **Settings → Pages** : source « Deploy from a branch », branche `main`, dossier `/ (root)`.
+- Sans nom de domaine, le site est visible à l'adresse https://mcboj.github.io/villa-tilibelilble/
+- Une fois le domaine `villa-tilibelilble.fr` acheté et les réglages DNS ci-dessous faits : dans **Settings → Pages**, saisir `www.villa-tilibelilble.fr` dans « Custom domain », cliquer sur **Save**, puis cocher « Enforce HTTPS » dès que la case est disponible. GitHub crée alors lui-même un fichier `CNAME` dans le dépôt.
 - **Chez le registrar du domaine** (zone DNS de `villa-tilibelilble.fr`) :
 
 | Type | Nom | Valeur |
 | --- | --- | --- |
-| CNAME | `www` | `NOM-DU-COMPTE.github.io.` |
+| CNAME | `www` | `mcboj.github.io.` |
 | A | `@` | `185.199.108.153` |
 | A | `@` | `185.199.109.153` |
 | A | `@` | `185.199.110.153` |
 | A | `@` | `185.199.111.153` |
 
-Remplacez `NOM-DU-COMPTE` par le nom du compte GitHub qui héberge ce dépôt. La prise en compte des réglages DNS peut prendre de quelques minutes à 24 heures.
+La prise en compte des réglages DNS peut prendre de quelques minutes à 24 heures.
 
 ## Ce qui ne doit pas aller ici
 
