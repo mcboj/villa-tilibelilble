@@ -11,12 +11,15 @@ Le site est hébergé gratuitement par GitHub Pages : chaque modification enregi
 
 | Fichier | Rôle |
 | --- | --- |
-| `index.html` | La page du site : textes, mise en page et informations lues par Google |
-| `images/` | Les photos, chacune en deux tailles (800 et 1600 pixels) |
+| `index.html` | La page du site : textes, photos et informations lues par Google |
+| `styles.css` | La mise en page et les couleurs |
+| `app.js`, `messages.js` | Les animations de la visite, le menu mobile et la galerie photo |
+| `images/optimized/` | Les photos au format WebP, chacune en deux tailles (800 et 1600 pixels) |
+| `fonts/` | Les polices Cormorant Garamond et Manrope, hébergées avec le site, et leurs licences |
+| `favicon.svg` | La libellule de l'onglet du navigateur |
 | `robots.txt` | Autorise Google, Bing et les assistants IA à lire le site |
-| `sitemap.xml` | Le plan du site, déclaré à Google et à Bing |
-| `llms.txt` | Un résumé factuel de la villa pour les assistants IA (ChatGPT, Claude...) |
-| `favicon.png`, `apple-touch-icon.png` | Les icônes du site |
+| `sitemap.xml` | Le plan du site, à déclarer à Google et à Bing |
+| `llms.txt` | Un résumé factuel de la maison pour les assistants IA (ChatGPT, Claude...) |
 | `.nojekyll` | Demande à GitHub de publier les fichiers tels quels |
 
 ## Modifier un texte
@@ -25,14 +28,12 @@ Le site est hébergé gratuitement par GitHub Pages : chaque modification enregi
 2. Cherchez la phrase avec Ctrl+F (Cmd+F sur Mac) et modifiez-la. Ne touchez qu'au texte situé entre les balises, par exemple entre `<p>` et `</p>`.
 3. Cliquez sur **Commit changes**, écrivez en une ligne ce que vous avez changé, puis validez.
 
-Si une question de la rubrique « Questions fréquentes » change, modifiez-la aussi dans le bloc `"@type": "FAQPage"` en haut du fichier et dans `llms.txt`, pour que Google et les assistants IA lisent la même chose que vos visiteurs.
-
-Pensez à mettre à jour de temps en temps la note Airbnb affichée en haut de la page.
+Si une information pratique change (horaires, équipements, règles), modifiez-la aussi dans le bloc `"@type": "VacationRental"` en haut de `index.html` et dans `llms.txt`, pour que Google et les assistants IA lisent la même chose que vos visiteurs. Pensez aussi à la date « Informations vérifiées le… » en bas de la page.
 
 ## Ajouter ou remplacer une photo
 
-1. Réduisez la photo à 1600 pixels de large au maximum (l'app Photos ou Aperçu le font), et donnez-lui un nom parlant, sans accents ni espaces : `plage-de-cluny-1600.jpg`.
-2. Dans le dossier `images`, cliquez sur **Add file** puis **Upload files**.
+1. Préparez la photo en deux tailles, 800 et 1600 pixels de large, au format WebP (le site gratuit squoosh.app le fait), avec un nom sans accents ni espaces : `plage-de-cluny-800.webp` et `plage-de-cluny-1600.webp`.
+2. Dans le dossier `images/optimized`, cliquez sur **Add file** puis **Upload files**.
 3. Dans `index.html`, faites pointer la photo vers ce nouveau nom et écrivez sa légende.
 
 ## Annuler une modification

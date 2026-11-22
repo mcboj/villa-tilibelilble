@@ -1,4 +1,4 @@
-# Villa Ti Libélil Blé : tout le site peut être exploré, y compris par les assistants IA.
+# Ti Libélil Blé : tout le site peut être exploré, y compris par les assistants IA.
 
 User-agent: *
 Allow: /
