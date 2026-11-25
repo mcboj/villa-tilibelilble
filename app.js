@@ -148,7 +148,7 @@ if(motionButton){
 
 // Only authored, same-origin image paths can reach the full-size viewer.
 const localImage=value=>{
- if(typeof value!=='string'||!/^images\/optimized\/[a-z0-9-]+\.webp$/.test(value))return null;
+ if(typeof value!=='string'||!/^(?:\.\.\/)?images\/optimized\/[a-z0-9-]+\.webp$/.test(value))return null;
  const url=new URL(value,document.URL);return url.origin===location.origin?url.href:null;
 };
 const viewer=$('#photo-viewer');

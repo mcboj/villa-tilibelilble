@@ -16,6 +16,8 @@ Le site est hébergé gratuitement par GitHub Pages : chaque modification enregi
 | `app.js`, `messages.js` | Les animations de la visite, le menu mobile et la galerie photo |
 | `images/optimized/` | Les photos au format WebP, chacune en deux tailles (800 et 1600 pixels) |
 | `fonts/` | Les polices Cormorant Garamond et Manrope, hébergées avec le site, et leurs licences |
+| `en/` | La version anglaise de la page d'accueil (`en/index.html`) et ses textes d'interface (`en/messages.js`) |
+| `balade-pointe-allegre/`, `plages-sainte-rose-deshaies/`, `que-faire-basse-terre/`, `ou-manger-sainte-rose-deshaies/` | Les quatre pages guides, chacune dans son dossier (`index.html`) |
 | `favicon.svg` | La libellule de l'onglet du navigateur |
 | `robots.txt` | Autorise Google, Bing et les assistants IA à lire le site |
 | `sitemap.xml` | Le plan du site, à déclarer à Google et à Bing |
@@ -29,6 +31,10 @@ Le site est hébergé gratuitement par GitHub Pages : chaque modification enregi
 3. Cliquez sur **Commit changes**, écrivez en une ligne ce que vous avez changé, puis validez.
 
 Si une information pratique change (horaires, équipements, règles), modifiez-la aussi dans le bloc `"@type": "VacationRental"` en haut de `index.html` et dans `llms.txt`, pour que Google et les assistants IA lisent la même chose que vos visiteurs. Pensez aussi à la date « Informations vérifiées le… » en bas de la page.
+
+Les questions fréquentes existent à trois endroits : la rubrique visible en bas de `index.html`, le bloc `"@type": "FAQPage"` en haut du même fichier, et `llms.txt`. La version anglaise a les siennes dans `en/index.html`. Modifiez-les ensemble.
+
+Quand vous changez un texte de la page d'accueil, pensez à faire la même modification dans `en/index.html`.
 
 ## Ajouter ou remplacer une photo
 
